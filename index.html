@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombrar Partida</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="isotipo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="javascriptt.js"></script>
+</head>
+<body class="fondo" >
+    <main class="main ">
+        <header class="header ">
+            <div class="header__contenido">
+                <img src="isotipo.png" alt="isotipo Pragma" class="isotipo">
+                <div class="header__texto">
+                    <p class="header_titulo ">Crear Partida</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="nombrar">
+            <div class="nombrar__contenido">
+                <p class="nombrar__label">Nombra la partida</p>
+                <input id="nombrar_id" class="nombrar_input" type="text" oninput="toggleButton()">
+                <p id="error_message" class="nombrar_error"></p>
+            </div>
+            
+            <button id="button__nombrar" class="button" disabled onclick="redirectPaginaCrear()">Crear Partida</button>
+        </section>
+    </main>
+    
+</body>
+</html>

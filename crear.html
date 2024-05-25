@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Partida</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="isotipo.png">
+    <script src="javascriptt.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="fondo__crear">
+    <main class="main">
+        <section class="crear">
+            <div class="crear__contenido">
+                <div class="nombrar__contenido">
+                    <label class="nombrar__label" for="input__nombre">Tu nombre</label>
+                    <input class="nombrar_input" type="text" id="input__nombre" oninput="toggleButtonCrear()">
+                    <p id="errorMessage__crear" class="nombrar_error"></p>
+                </div>
+
+                <div class="crear__check">
+                    <div class="check__div">
+                        <p  class="crear__label" >Jugador</p>
+                        <input type="radio" class="check__radio" name="tipoJugador__crear" onchange="toggleButtonCrear()">
+                    </div>
+                    <div class="check__div">
+                        <p  class="crear__label" >Espectador</p>
+                        <input type="radio" class="check__radio" name="tipoJugador__crear" onchange="toggleButtonCrear()">
+                    </div>
+                </div>
+
+                <button id="buttonNombrar__crear" class="button" disabled >Continuar</button>
+                
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>

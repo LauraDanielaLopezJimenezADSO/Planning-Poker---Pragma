@@ -1,0 +1,195 @@
+:root{
+    --color-letra: rgb(255, 255, 255, 1);
+    --height-header: 95px;
+    --textoAzulOscuro: rgba(51, 0, 114, 1);
+    --radio: rgba(100, 41, 205, 0.3);
+    --borderRadio: rgba(187, 101, 255, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+/* PAGINA 2 */
+/* header con isotipo */
+.header{
+    display: flex;
+    padding: 35px 0px 0px 80px;
+    
+}
+.header__contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.fondo{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(50% 50% at 50% 50%, #330072 0%, rgba(31, 13, 63, 0.9) 100%);
+
+}
+
+.fondo__crear{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(50% 50% at 50% 50%, #330072 0%, rgba(31, 13, 63, 0.9) 100%);
+
+}
+
+.header_titulo{
+    color: var(--color-letra);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+/* CONTENIDO DE LA SECTION */
+
+.nombrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--height-header));
+    color: var(--color-letra);
+    flex-direction: column;
+    gap: 31px;
+}
+
+.nombrar__contenido{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nombrar__label{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0px 0px 8px 0px;
+    /* line-height: 19px; */
+}
+
+.nombrar_input{
+    width: 292px;
+    height: 40px;
+    padding: 4px 4px 4px 15px;
+    border-radius: 100px;
+    gap: 24px;
+    background: rgba(100, 41, 205, 0.08);
+    border: 1px solid rgba(187, 101, 255, 1);
+    color: var(--color-letra);
+    outline: none;
+}
+
+.nombrar_input:hover{
+    /* mantener el efecto de sombra al enfocar y establece el color de fondo predeterminado del input*/
+    background-color: rgba(100, 41, 205, 0.08);
+    box-shadow: 3px 3px 3px 3px  30px solid rgb(144, 0, 255);
+    
+}
+
+.button{
+    width: 159px;
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    background: var(--color-letra);
+    color: var(--textoAzulOscuro);
+    cursor: pointer;
+}
+
+.button:disabled {
+    /* Estilos para el botón deshabilitado */
+    background: rgba(157, 157, 161, 0.6);
+    color: rgba(51, 0, 114, 0.6);
+    cursor: not-allowed; /* Cambia el cursor al pasar sobre el botón deshabilitado */
+}
+
+.button:not(:disabled) {
+    /* Estilos para el botón habilitado (restaura el color original) */
+    background: var(--color-letra);
+    color: var(--textoAzulOscuro);
+}
+
+
+
+.nombrar_error{
+    padding-top: 8px;
+    color: rgb(255, 0, 64);
+    font-size: 14px;
+}
+
+.button__texto{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(51, 0, 114, 1);
+
+}
+
+/* .button--inactive{
+    background: rgba(157, 157, 161, 0.6);
+}
+
+.button__texto--inactive{
+    color: rgba(157, 157, 161, 0.6);
+} */
+
+
+
+/* SECCION 2 ESCRIBIR NOMBRE Y SELECCIONAR  */
+.crear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--height-header));
+    color: var(--color-letra);
+    flex-direction: column;
+}
+
+.crear__contenido{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 31px 0px;
+}
+
+.crear__check{
+    display: flex;
+    padding: 21px 0px 44px 0px;
+    align-items: center;
+    justify-content: space-around;
+    width: 292px;
+}
+
+.check__div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.check__radio{
+    background: none;
+    height: 21px;
+    width: 21px;
+    accent-color: var(--borderRadio);
+}
+
+
+
+/* Estilo del input radio cuando está seleccionado */
+/* .check__radio:checked {
+    background-color: var(--borderRadio);
+} */
