@@ -1,3 +1,7 @@
+@import url(botonBlanco.css);
+@import url(compInput.css);
+
+
 :root{
     --color-letra: rgb(255, 255, 255, 1);
     --height-header: 95px;
@@ -95,7 +99,8 @@ body{
     
 }
 
-.button{
+
+/* .button{
     width: 159px;
     height: 40px;
     font-weight: 600;
@@ -105,20 +110,21 @@ body{
     background: var(--color-letra);
     color: var(--textoAzulOscuro);
     cursor: pointer;
-}
+} */
 
-.button:disabled {
+/* .button:disabled { */
     /* Estilos para el botón deshabilitado */
-    background: rgba(157, 157, 161, 0.6);
-    color: rgba(51, 0, 114, 0.6);
-    cursor: not-allowed; /* Cambia el cursor al pasar sobre el botón deshabilitado */
-}
+    /* background: rgba(157, 157, 161, 0.6); */
+    /* color: rgba(51, 0, 114, 0.6); */
+    /* cursor: not-allowed;  */
+    /* Cambia el cursor al pasar sobre el botón deshabilitado */
+/* } */
 
-.button:not(:disabled) {
+/* .button:not(:disabled) { */
     /* Estilos para el botón habilitado (restaura el color original) */
-    background: var(--color-letra);
-    color: var(--textoAzulOscuro);
-}
+    /* background: var(--color-letra); */
+    /* color: var(--textoAzulOscuro); */
+/* } */
 
 
 

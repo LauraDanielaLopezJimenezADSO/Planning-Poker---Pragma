@@ -1,0 +1,31 @@
+.nombrar__contenido{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nombrar__label{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0px 0px 8px 0px;
+    /* line-height: 19px; */
+}
+
+.nombrar_input{
+    width: 292px;
+    height: 40px;
+    padding: 4px 4px 4px 15px;
+    border-radius: 100px;
+    gap: 24px;
+    background: rgba(100, 41, 205, 0.08);
+    border: 1px solid rgba(187, 101, 255, 1);
+    color: var(--color-letra);
+    outline: none;
+}
+
+.nombrar_input:hover{
+    /* mantener el efecto de sombra al enfocar y establece el color de fondo predeterminado del input*/
+    background-color: rgba(100, 41, 205, 0.08);
+    box-shadow: 3px 3px 3px 3px  30px solid rgb(144, 0, 255);
+    
+}
